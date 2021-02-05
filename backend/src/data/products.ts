@@ -14,7 +14,7 @@ enum Category {
 const products: Product[] = [
   {
     name: "Red apple",
-    image: "/images/apple.jpg",
+    image: "http://localhost:5000/static/images/apple.jpeg",
     description: "Delicious",
     category: Category.Fruit,
     price: 0.5,
@@ -22,7 +22,7 @@ const products: Product[] = [
   },
   {
     name: "Mango",
-    image: "/images/mango.jpg",
+    image: "http://localhost:5000/static/images/mango.jpeg",
     description: "",
     category: "Fruit",
     price: 2.99,
@@ -30,7 +30,7 @@ const products: Product[] = [
   },
   {
     name: "Pineapple",
-    image: "/images/pineapple.jpg",
+    image: "http://localhost:5000/static/images/pineapple.jpeg",
     description: "",
     category: "Fruit",
     price: 5,
@@ -38,7 +38,7 @@ const products: Product[] = [
   },
   {
     name: "Dragonfruit",
-    image: "/images/dragonfruit.jpg",
+    image: "http://localhost:5000/static/images/dragonfruit.jpeg",
     description: "",
     category: "Fruit",
     price: 5,
@@ -46,7 +46,7 @@ const products: Product[] = [
   },
   {
     name: "Cucumber",
-    image: "/images/cucumber.jpg",
+    image: "http://localhost:5000/static/images/cucumber.jpeg",
     description: "",
     category: "Vegetable",
     price: 1.5,
@@ -54,7 +54,7 @@ const products: Product[] = [
   },
   {
     name: "Broccoli",
-    image: "/images/broccoli.jpg",
+    image: "http://localhost:5000/static/images/broccoli.jpeg",
     description: "",
     category: "Vegetable",
     price: 5,
@@ -62,7 +62,7 @@ const products: Product[] = [
   },
   {
     name: "Cauliflower",
-    image: "/images/cauliflower.jpg",
+    image: "http://localhost:5000/static/images/cauliflower.jpeg",
     description: "",
     category: "Vegetable",
     price: 5,
@@ -70,7 +70,7 @@ const products: Product[] = [
   },
   {
     name: "Milk",
-    image: "/images/milk.jpg",
+    image: "http://localhost:5000/static/images/milk.jpeg",
     description: "Mooooo",
     category: "Dairy",
     price: 1.2,
@@ -78,7 +78,7 @@ const products: Product[] = [
   },
   {
     name: "Eggs",
-    image: "/images/eggs.jpg",
+    image: "http://localhost:5000/static/images/eggs.jpeg",
     description: "",
     category: "Eggs",
     price: 2.5,

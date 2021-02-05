@@ -8,8 +8,8 @@ import path from 'path'
 app.use(express.json());
 app.use(cors())
 app.use('/api/products', productsRouter)
-// app.use(express.static('data'))
-// app.use('/static', express.static(path.join(__dirname, 'data')))
+app.use(express.static('data'))
+app.use('/static', express.static(path.join(__dirname, 'data')))
 
 // define a route handler for the default home page
 app.get("/", (req: Request, res: Response) => {

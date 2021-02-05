@@ -8,12 +8,15 @@ type Product = {
   countInStock: number
 }
 
+enum Category {
+  Fruit = 'Fruit'
+}
 const products: Product[] = [
   {
     name: "Red apple",
     image: "/images/apple.jpg",
     description: "Delicious",
-    category: "Fruits",
+    category: Category.Fruit,
     price: 0.5,
     countInStock: 30,
   },

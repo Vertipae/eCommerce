@@ -4,15 +4,23 @@ import "./App.css"
 import { Container } from "react-bootstrap"
 import Header from "./components/layout/Header"
 import FoodSelection from "./components/layout/FoodSelection"
+import HomeScreen from "./screens/HomeScreen"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import ProductCategoryScreen from "./screens/ProductCategoryScreen"
 
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <FoodSelection />
-      <Container>
-        <h3>eCommerce</h3>
-      </Container>
+      <Router>
+        <Header />
+        <FoodSelection />
+        <Container style={{ paddingTop: "0.5em" }}>
+          <Switch>
+            <Route exact path='/' component={HomeScreen} />
+            <Route exact path='/products' component={ProductCategoryScreen} />
+          </Switch>
+        </Container>
+      </Router>
     </div>
   )
 }

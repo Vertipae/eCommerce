@@ -6,6 +6,11 @@ button.btn.btn-outline-light:hover {
   color: black;
 }
 
+.carouselLabel {
+  color: #343a40;
+  background-color: #ffffffa8;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;

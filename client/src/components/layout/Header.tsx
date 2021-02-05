@@ -12,7 +12,7 @@ function Header() {
   return (
     <div>
       <Navbar bg='success' expand='lg' variant='dark' collapseOnSelect>
-        <Navbar.Brand href='#home'>Pineapple Mint</Navbar.Brand>
+        <Navbar.Brand href='/'>Pineapple Mint</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto'>
@@ -32,6 +32,9 @@ function Header() {
             <FormControl type='text' placeholder='Search' className='mr-sm-2' />
             <Button variant='outline-light'>Search</Button>
           </Form>
+          <Nav.Link href='#link' style={{ color: "#141414" }}>
+            <i className='fas fa-shopping-cart'></i> Cart
+          </Nav.Link>
         </Navbar.Collapse>
       </Navbar>
     </div>

@@ -3,8 +3,8 @@ import productsdata from '../data/products'
 
 const router = express.Router()
 
-router.get("/"), (req:Request, res:Response) => {
+router.get("/", (req:Request, res:Response) => {
     res.send(productsdata)
-}
+})
 
 export default router

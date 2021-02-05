@@ -3,14 +3,18 @@ import { Nav, NavDropdown } from "react-bootstrap"
 
 function FoodSelection() {
   return (
-    <div>
+    <div style={{ paddingTop: "0.3em" }}>
       <Nav fill>
         <NavDropdown title='Fruits, Vegetables' id='nav-dropdown'>
-          <NavDropdown.Item eventKey='4.1'>Action</NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.2'>Another action</NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.3'>
-            Something else here
+          <NavDropdown.Item
+            href='/products?category=fruitsandvegetables'
+            eventKey='4.1'
+          >
+            All
           </NavDropdown.Item>
+
+          <NavDropdown.Item eventKey='4.2'>Fruits</NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.3'>Vegetables</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item eventKey='4.4'>Separated link</NavDropdown.Item>
         </NavDropdown>

@@ -2,12 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Category;
 (function (Category) {
-    Category["Fruit"] = "Fruit";
+    Category["Fruit"] = "fruits";
+    Category["Vegetable"] = "vegetables";
 })(Category || (Category = {}));
 const products = [
     {
         name: "Red apple",
-        image: "/images/apple.jpg",
+        image: "http://localhost:5000/static/images/apple.jpeg",
         description: "Delicious",
         category: Category.Fruit,
         price: 0.5,
@@ -15,55 +16,55 @@ const products = [
     },
     {
         name: "Mango",
-        image: "/images/mango.jpg",
+        image: "http://localhost:5000/static/images/mango.jpeg",
         description: "",
-        category: "Fruit",
+        category: Category.Fruit,
         price: 2.99,
         countInStock: 10,
     },
     {
         name: "Pineapple",
-        image: "/images/pineapple.jpg",
+        image: "http://localhost:5000/static/images/pineapple.jpeg",
         description: "",
-        category: "Fruit",
+        category: Category.Fruit,
         price: 5,
         countInStock: 5,
     },
     {
         name: "Dragonfruit",
-        image: "/images/dragonfruit.jpg",
+        image: "http://localhost:5000/static/images/dragonfruit.jpeg",
         description: "",
-        category: "Fruit",
+        category: Category.Fruit,
         price: 5,
         countInStock: 5,
     },
     {
         name: "Cucumber",
-        image: "/images/cucumber.jpg",
+        image: "http://localhost:5000/static/images/cucumber.jpeg",
         description: "",
-        category: "Vegetable",
+        category: Category.Vegetable,
         price: 1.5,
         countInStock: 15,
     },
     {
         name: "Broccoli",
-        image: "/images/broccoli.jpg",
+        image: "http://localhost:5000/static/images/broccoli.jpeg",
         description: "",
-        category: "Vegetable",
+        category: Category.Vegetable,
         price: 5,
         countInStock: 5,
     },
     {
         name: "Cauliflower",
-        image: "/images/cauliflower.jpg",
+        image: "http://localhost:5000/static/images/cauliflower.jpeg",
         description: "",
-        category: "Vegetable",
+        category: Category.Vegetable,
         price: 5,
         countInStock: 5,
     },
     {
         name: "Milk",
-        image: "/images/milk.jpg",
+        image: "http://localhost:5000/static/images/milk.jpeg",
         description: "Mooooo",
         category: "Dairy",
         price: 1.2,
@@ -71,7 +72,7 @@ const products = [
     },
     {
         name: "Eggs",
-        image: "/images/eggs.jpg",
+        image: "http://localhost:5000/static/images/eggs.jpeg",
         description: "",
         category: "Eggs",
         price: 2.5,

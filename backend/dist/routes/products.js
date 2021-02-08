@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const products_1 = __importDefault(require("../data/products"));
 const router = express_1.default.Router();
-router.get("/"), (req, res) => {
+router.get("/", (req, res) => {
     res.send(products_1.default);
-};
+});
 exports.default = router;
 //# sourceMappingURL=products.js.map

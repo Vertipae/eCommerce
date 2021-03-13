@@ -4,6 +4,7 @@ const app: express.Application = express()
 const port = 5000 // default port to listen
 import productsRouter from './routes/products'
 import path from 'path'
+// import colors from 'colors'
 
 app.use(express.json());
 app.use(cors())

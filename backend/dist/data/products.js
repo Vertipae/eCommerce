@@ -4,6 +4,9 @@ var Category;
 (function (Category) {
     Category["Fruit"] = "fruits";
     Category["Vegetable"] = "vegetables";
+    Category["Dairy"] = "dairy";
+    Category["Eggs"] = "eggs";
+    Category["Berries"] = "berries";
 })(Category || (Category = {}));
 const products = [
     {
@@ -63,10 +66,34 @@ const products = [
         countInStock: 5,
     },
     {
+        name: "Blueberry",
+        image: "http://localhost:5000/static/images/blueberry.jpeg",
+        description: "",
+        category: Category.Berries,
+        price: 2,
+        countInStock: 20,
+    },
+    {
+        name: "Strawberry",
+        image: "http://localhost:5000/static/images/strawberry.jpeg",
+        description: "",
+        category: Category.Berries,
+        price: 2,
+        countInStock: 20,
+    },
+    {
+        name: "Rasberry",
+        image: "http://localhost:5000/static/images/rasberry.jpeg",
+        description: "",
+        category: Category.Berries,
+        price: 2,
+        countInStock: 20,
+    },
+    {
         name: "Milk",
         image: "http://localhost:5000/static/images/milk.jpeg",
         description: "Mooooo",
-        category: "Dairy",
+        category: Category.Dairy,
         price: 1.2,
         countInStock: 5,
     },
@@ -74,7 +101,7 @@ const products = [
         name: "Eggs",
         image: "http://localhost:5000/static/images/eggs.jpeg",
         description: "",
-        category: "Eggs",
+        category: Category.Eggs,
         price: 2.5,
         countInStock: 30,
     },

@@ -30,7 +30,7 @@ const products: Product[] = [
     description: "",
     category: Category.Fruit,
     price: 2.99,
-    countInStock: 10,
+    countInStock: 0,
   },
   {
     name: "Pineapple",
@@ -62,7 +62,7 @@ const products: Product[] = [
     description: "",
     category: Category.Vegetable,
     price: 5,
-    countInStock: 5,
+    countInStock: 0,
   },
   {
     name: "Cauliflower",
